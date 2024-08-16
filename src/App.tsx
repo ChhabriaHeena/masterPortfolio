@@ -1,11 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+// import './App.css';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
     <div className="App">
-     <h1>Comming Soon</h1>
+      <Portfolio/>
     </div>
   );
 }
