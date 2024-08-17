@@ -23,7 +23,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'About', 'Skills', 'Projects', 'Hire', 'Contact'];
 
 const Header = (props: any) => {
   const { window } = props;
