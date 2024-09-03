@@ -11,6 +11,9 @@ const useStyles = makeStyles(() => ({
       display: 'none',
     },
   },
+  navComponent:{
+    backgroundColor: "#A5ACFE"
+  }
 }));
 
 export default useStyles;

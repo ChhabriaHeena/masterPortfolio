@@ -60,10 +60,9 @@ const Header = (props: any) => {
     
       <Box>
         <CssBaseline />
-        <AppBar component="nav">
+        <AppBar component="nav" className={classes.navComponent} style={{backgroundColor: "#A5ACFE"}}>
           <Toolbar>
             <IconButton
-              color="inherit"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
