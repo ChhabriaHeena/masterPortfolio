@@ -1,7 +1,13 @@
 import React from 'react'
 import useStyles from './styles/Banner.styles';
-import { Grid } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import bannerImage from './images/Heena_Chhabria.webp'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GoogleIcon from '@mui/icons-material/Google';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import StarIcon from '@mui/icons-material/Star';
 
 const Banner = () => {
 
@@ -22,6 +28,16 @@ const Banner = () => {
                 A position in a growth-oriented company where I can put my abilities to effective use. While having the benefit of the
                 company this would be the opportunity to expand my knowledge and abilities
               </h3>
+              <div>
+                <GitHubIcon/>
+                <LinkedInIcon/>
+                <GoogleIcon/>
+                <InstagramIcon/>
+                <FacebookIcon/>
+              </div>
+              <div>
+                <Button variant="contained" startIcon={<StarIcon />}>Star me on Github</Button>
+              </div>
             </div>
           </Grid>
           <Grid item xs={12} md={6} sm>
