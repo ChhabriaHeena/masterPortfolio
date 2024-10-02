@@ -1,10 +1,19 @@
 import React from 'react'
+import useStyles from './styles/Footer.styles';
+
 
 const Footer = () => {
+
+  const classes = useStyles();
+
   return (
-    <div>
-      Footer
-    </div>
+    <section className={classes.footer}>
+
+      <div className={classes.footerMain}>
+        Footer
+
+      </div>
+    </section>
   )
 }
 
