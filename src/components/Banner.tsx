@@ -34,6 +34,8 @@ const Banner = () => {
                 <GoogleIcon/>
                 <InstagramIcon/>
                 <FacebookIcon/>
+                HackerRank
+                CodeChef
               </div>
               <div>
                 <Button variant="contained" startIcon={<StarIcon />}>Star me on Github</Button>

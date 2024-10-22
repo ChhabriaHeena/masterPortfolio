@@ -6,6 +6,8 @@ import GoogleIcon from '@mui/icons-material/Google';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import StarIcon from '@mui/icons-material/Star';
+import contactMe from './images/contactme.avif'
+
 
 const Contact = () => {
 
@@ -13,7 +15,9 @@ const Contact = () => {
         <div>
             <Grid container>
                 <Grid item xs={12} md={6} sm={6}>
-                    Contact Me
+                    {/* Contact Me */}
+            <img src={contactMe} alt="image" />
+
                 </Grid>
                 <Grid item xs={12} md={6} sm>
                     <div
@@ -28,6 +32,8 @@ const Contact = () => {
                             <GoogleIcon />
                             <InstagramIcon />
                             <FacebookIcon />
+                            HackerRank
+                            CodeChef
                         </div>
                         <div>
                             <Button variant="contained">See my Resume</Button>
