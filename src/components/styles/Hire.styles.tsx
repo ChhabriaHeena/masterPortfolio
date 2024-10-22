@@ -10,7 +10,9 @@ const useStyles = makeStyles(() => ({
     hireMain: {
         // height: "100vh",
         marginTop: "5%",
-        backgroundColor:"#A5ACFE"
+        backgroundColor:"#A5ACFE",
+        textAlign:"center",
+        padding:"2% 0"
     },
     bannerGridContainer: {
         // height: "100vh"
