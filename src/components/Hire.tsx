@@ -13,7 +13,7 @@ const Hire = () => {
       <div className={classes.hireMain}>
         <h2>Hire Me</h2>
         <div>
-          <Button variant="contained">Contact Me</Button>
+          <Button variant="contained">Contact</Button>
         </div>
       </div>
     </section>
