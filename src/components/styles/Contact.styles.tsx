@@ -2,11 +2,13 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(() => ({
     contactImg:{
-        textAlign:"center"
+        alignItems:"center",
+        display:"flex"
 
     },
     contactMe:{
-        height:"80%",
+        // height:"80%",
+        width:"100%"
     },
     contactMeContent:{
         textAlign:"center",
