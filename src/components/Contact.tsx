@@ -18,7 +18,7 @@ const Contact = () => {
     return (
         <div>
             <Grid container>
-                <Grid item className={classes.contactImg} xs={12} md={6} sm={6}>
+                <Grid item className={classes.contactImg} xs={12} md sm>
                     {/* Contact Me */}
                     <img className={classes.contactMe} src={contactMe} alt="image" />
 
