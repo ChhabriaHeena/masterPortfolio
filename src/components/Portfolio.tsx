@@ -8,27 +8,25 @@ import Skills from './Skills';
 import Hire from './Hire';
 import Contact from './Contact';
 import Footer from './Footer';
+import FrontPage from './FrontPage';
 
 const Portfolio = () => {
   return (
     <div>
       {/* Portfolio */}
-      <Header />
-      <Banner />
-      <About />
-      <Skills/>
-      <Projects/>
-      <Hire/>
-      <Contact/>
-      <Footer/>
-      {/* <Router>
+      <Router>
+          <Header/>
         <Routes>
-          <Route path='/' element={<Header/>}/>
-          <Route path='/' element={<Banner/>}/>
-          <Route path='/' element={<About/>}/>
+          <Route path='/' element={<FrontPage />} />
+          <Route path='/home' element={<FrontPage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/skills' element={<Skills />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/hire' element={<Hire />} />
+          <Route path='/contact' element={<Contact />} />
 
         </Routes>
-      </Router> */}
+      </Router>
     </div>
   )
 }

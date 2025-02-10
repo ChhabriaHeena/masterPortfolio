@@ -14,6 +14,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useStyles from './styles/Header.styles';
+import { Link } from '@mui/material';
+// import { Link } from 'react-router-dom';
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.
@@ -56,57 +58,61 @@ const Header = (props: any) => {
 
   return (
     <>
-    <div className={classes.headerMain}>
-    
-      <Box>
-        <CssBaseline />
-        <AppBar component="nav" className={classes.navComponent} style={{backgroundColor: "#A5ACFE"}}>
-          <Toolbar>
-            <IconButton
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              className={classes.iconButton}
-              sx={{ mr: 2, display: { sm: 'none' } }}
+      <div className={classes.headerMain}>
+
+        <Box>
+          <CssBaseline />
+          <AppBar component="nav" className={classes.navComponent} style={{ backgroundColor: "#A5ACFE" }}>
+            <Toolbar>
+              <IconButton
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                className={classes.iconButton}
+                sx={{ mr: 2, display: { sm: 'none' } }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link href="/">Heena Chhabria</Link>
+              </Typography>
+              <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                {navItems.map((item) => (
+                  <Button key={item} sx={{ color: '#fff' }}>
+                    <Link href={item}>{item}</Link>
+                  </Button>
+                ))}
+              </Box>
+              {/* <Button>
+                <Link href="/about">About</Link>
+
+              </Button> */}
+            </Toolbar>
+          </AppBar>
+          <nav>
+            <Drawer
+              container={container}
+              variant="temporary"
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+              }}
+              sx={{
+                display: { xs: 'block', sm: 'none' },
+                '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+              }}
             >
-              <MenuIcon />
-            </IconButton>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            >
-              Heena Chhabria
-            </Typography>
-            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: '#fff' }}>
-                  {item}
-                </Button>
-              ))}
-            </Box>
-          </Toolbar>
-        </AppBar>
-        <nav>
-          <Drawer
-            container={container}
-            variant="temporary"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
-            sx={{
-              display: { xs: 'block', sm: 'none' },
-              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </nav>
-      </Box>
-        
-    </div>
+              {drawer}
+            </Drawer>
+          </nav>
+        </Box>
+
+      </div>
     </>
   );
 }
