@@ -17,7 +17,6 @@ const FrontPage = () => {
             <Projects />
             <Hire />
             <Contact />
-            <Footer />
         </div>
     )
 }

@@ -26,6 +26,7 @@ const Portfolio = () => {
           <Route path='/contact' element={<Contact />} />
 
         </Routes>
+          <Footer/>
       </Router>
     </div>
   )

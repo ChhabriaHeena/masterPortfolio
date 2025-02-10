@@ -10,6 +10,10 @@ const useStyles = makeStyles(() => ({
     },
     aboutPage:{
         marginBottom:"5%"
+    },
+    aboutContent:{
+        display:"flex",
+        alignItems:"center"
     }
 }));
 

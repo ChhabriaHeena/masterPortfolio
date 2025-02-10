@@ -17,7 +17,7 @@ const About = () => {
         className={classes.aboutMeImage}>
           <img src={aboutMeImage} alt="image" />
         </Grid>
-        <Grid item xs={12} md={6} sm={6}>
+        <Grid item xs={12} md={6} sm={6} className={classes.aboutContent}>
           <h3>
            A self-motivated individual with 2+ years of experience in Frontend Development and a great understanding of programming languages who is looking for a new opportunity. A position in a growth-oriented company where I can put my abilities to effective use. While having the benefit of the company this would be the opportunity to expand my knowledge and abilities
           </h3>
