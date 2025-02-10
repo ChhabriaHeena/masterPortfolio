@@ -23,10 +23,8 @@ const Contact = () => {
                     <img className={classes.contactMe} src={contactMe} alt="image" />
 
                 </Grid>
-                <Grid item xs={12} md={6} sm>
-                    <div
-                    className={classes.contactMeContent}
-                    >
+                <Grid item xs={12} md={6} sm className={classes.contactMeContent}>
+                    <div>
                         <h3>
                             I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with React, FrontEnd, Cloud and Opensource Development.
                         </h3>

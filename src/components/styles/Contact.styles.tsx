@@ -8,12 +8,12 @@ const useStyles = makeStyles(() => ({
     },
     contactMe:{
         // height:"80%",
-        width:"100%"
+        width:"100%",
+        height:"90vh"
     },
     contactMeContent:{
-        textAlign:"center",
-        marginTop:"30%",
-        marginRight:"9%"
+        display:"flex",
+        alignItems:"center"
     }
 
 }));
