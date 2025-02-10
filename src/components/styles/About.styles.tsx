@@ -4,6 +4,12 @@ const useStyles = makeStyles(() => ({
 
     aboutMeImage:{
         textAlign:"center"
+    },
+    aboutHeader:{
+        textAlign:"center"
+    },
+    aboutPage:{
+        marginBottom:"5%"
     }
 }));
 

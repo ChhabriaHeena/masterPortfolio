@@ -10,10 +10,10 @@ const About = () => {
 
 
   return (
-    <div>
-      <h1>What I Do?</h1>
+    <div className={classes.aboutPage}>
+      <h1 className={classes.aboutHeader}>What I Do?</h1>
       <Grid container>
-        <Grid item xs={6} md={5} sm 
+        <Grid item xs={12} md={5} sm
         className={classes.aboutMeImage}>
           <img src={aboutMeImage} alt="image" />
         </Grid>
