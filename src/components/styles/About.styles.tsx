@@ -5,6 +5,10 @@ const useStyles = makeStyles(() => ({
     aboutMeImage:{
         textAlign:"center"
     },
+    aboutImage:{
+        height:"100%",
+        width:"70%",
+    },
     aboutHeader:{
         textAlign:"center"
     },

@@ -7,7 +7,6 @@ const useStyles = makeStyles(() => ({
 
     },
     contactMe:{
-        // height:"80%",
         width:"100%",
         height:"90vh"
     },

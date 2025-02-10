@@ -15,7 +15,7 @@ const About = () => {
       <Grid container>
         <Grid item xs={12} md={5} sm
         className={classes.aboutMeImage}>
-          <img src={aboutMeImage} alt="image" />
+          <img className={classes.aboutImage} src={aboutMeImage} alt="image" />
         </Grid>
         <Grid item xs={12} md={6} sm={6} className={classes.aboutContent}>
           <h3>
