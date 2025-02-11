@@ -11,14 +11,12 @@ import Skills from './Skills'
 const FrontPage = () => {
     return (
         <div>
-            <Header />
             <Banner />
             <About />
             <Skills />
             <Projects />
             <Hire />
             <Contact />
-            <Footer />
         </div>
     )
 }

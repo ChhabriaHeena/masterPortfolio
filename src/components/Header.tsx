@@ -78,12 +78,12 @@ const Header = (props: any) => {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
               >
-                <Link href="/">Heena Chhabria</Link>
+                <Link href="/" style={{ color: '#fff', textDecoration:"none" }}>Heena Chhabria</Link>
               </Typography>
               <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                 {navItems.map((item) => (
                   <Button key={item} sx={{ color: '#fff' }}>
-                    <Link href={item}>{item}</Link>
+                    <Link style={{ color: '#fff', textDecoration:"none" }} href={item}>{item}</Link>
                   </Button>
                 ))}
               </Box>
