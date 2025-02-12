@@ -7,7 +7,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import StarIcon from '@mui/icons-material/Star';
 import contactMe from './images/contactme.avif'
-import { ClassNames } from "@emotion/react";
 import useStyles from "./styles/Contact.styles";
 
 
@@ -34,7 +33,7 @@ const Contact = () => {
             // body: JSON.stringify(formData),
         });
 
-        console.log(responseGet)
+        console.log("response: ",responseGet)
 
         // const dataGet = await responseGet.json();
         // console.log(dataGet)

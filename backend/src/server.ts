@@ -64,7 +64,7 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
-      auth: { user: process.env.EMAIL, pass: process.env.EMAIL_PASS }
+      // auth: { user: process.env.EMAIL, pass: process.env.EMAIL_PASS }
     });
 
     await transporter.sendMail({
@@ -75,7 +75,6 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
     });
 
     res.status(201).json({ message: 'Message received!' });
-    res.status(200).json({ message: 'Message received!' });
   } catch (err) {
     res.status(500).json({ error: `Error saving message, ${err}` });
   }
