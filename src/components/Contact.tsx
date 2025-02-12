@@ -1,5 +1,5 @@
 import { Button, Grid } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GoogleIcon from '@mui/icons-material/Google';
@@ -15,8 +15,26 @@ const Contact = () => {
 
     const classes = useStyles();
 
-    const handleChange = ()=>{
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+
+    const handleChange = (e: any) => {
         console.log("handle change")
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
+
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+
+        const response = await fetch("https://masterportfolio-tm5w.onrender.com/contact", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+        console.log(data)
+        alert(data.message);
+
     }
 
     return (
@@ -49,7 +67,7 @@ const Contact = () => {
             </Grid>
 
             <div>
-                <form action="">
+                <form action="" onSubmit={handleSubmit}>
                     <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
                     <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
                     <textarea name="message" placeholder="Message" onChange={handleChange} required />

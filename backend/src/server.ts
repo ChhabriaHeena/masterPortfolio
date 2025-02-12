@@ -56,6 +56,8 @@ const Contact = mongoose.model('Contact', ContactSchema);
 
 app.post('/contact', async (req: { body: { name: any; email: any; message: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { message?: string; error?: string; }): void; new(): any; }; }; }) => {
   try {
+
+    console.log(req, "res: ", res)
     const { name, email, message } = req.body;
     const newMessage = new Contact({ name, email, message });
     await newMessage.save();
@@ -85,6 +87,7 @@ app.get('/', (req, res) => {
 app.get('/messages', async (req: any, res: { json: (arg0: any) => void; }) => {
   const messages = await Contact.find();
   res.json(messages);
+  console.log(messages)
 });
 
 const PORT = process.env.PORT || 5000;
