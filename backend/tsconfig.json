@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./",
-    "strict": true,
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "./dist",   
+    "rootDir": "./src",
     "esModuleInterop": true
   },
-  "include": ["server.ts", "src/**/*"]
+  "include": [
+    "src/**/*.ts"
+  ]
 }
