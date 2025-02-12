@@ -1,5 +1,5 @@
 import { Button, Grid } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GoogleIcon from '@mui/icons-material/Google';
@@ -22,8 +22,24 @@ const Contact = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
 
+   
+
     const handleSubmit = async (e: any) => {
         e.preventDefault();
+
+
+        const responseGet = await fetch("https://masterportfolio-tm5w.onrender.com/contact", {
+            method: "GET",
+            // headers: { 'Content-Type': 'application/json' },
+            // body: JSON.stringify(formData),
+        });
+
+        console.log(responseGet)
+
+        // const dataGet = await responseGet.json();
+        // console.log(dataGet)
+        // alert(dataGet.message);
+
 
         const response = await fetch("https://masterportfolio-tm5w.onrender.com/contact", {
             method: "POST",

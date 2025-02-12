@@ -75,8 +75,9 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
     });
 
     res.status(201).json({ message: 'Message received!' });
+    res.status(200).json({ message: 'Message received!' });
   } catch (err) {
-    res.status(500).json({ error: 'Error saving message' });
+    res.status(500).json({ error: `Error saving message, ${err}` });
   }
 });
 
