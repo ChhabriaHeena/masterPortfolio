@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.a6b2bd11.js",
+    "main.js": "/masterPortfolio/static/js/main.baff55f8.js",
     "static/css/464.b1a9d572.chunk.css": "/masterPortfolio/static/css/464.b1a9d572.chunk.css",
-    "static/js/464.88325ba4.chunk.js": "/masterPortfolio/static/js/464.88325ba4.chunk.js",
+    "static/js/464.2e2c43c1.chunk.js": "/masterPortfolio/static/js/464.2e2c43c1.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
-    "static/js/487.97615b0d.chunk.js": "/masterPortfolio/static/js/487.97615b0d.chunk.js",
+    "static/js/618.be49c7f0.chunk.js": "/masterPortfolio/static/js/618.be49c7f0.chunk.js",
     "static/media/Heena_Chhabria.webp": "/masterPortfolio/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
     "static/media/about-me.jpg": "/masterPortfolio/static/media/about-me.683e8d578b41bc8928c8.jpg",
     "static/media/contactme.avif": "/masterPortfolio/static/media/contactme.b0aec40a557fcf09b3df.avif",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.a6b2bd11.js.map": "/masterPortfolio/static/js/main.a6b2bd11.js.map",
+    "main.baff55f8.js.map": "/masterPortfolio/static/js/main.baff55f8.js.map",
     "464.b1a9d572.chunk.css.map": "/masterPortfolio/static/css/464.b1a9d572.chunk.css.map",
-    "464.88325ba4.chunk.js.map": "/masterPortfolio/static/js/464.88325ba4.chunk.js.map",
+    "464.2e2c43c1.chunk.js.map": "/masterPortfolio/static/js/464.2e2c43c1.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
-    "487.97615b0d.chunk.js.map": "/masterPortfolio/static/js/487.97615b0d.chunk.js.map"
+    "618.be49c7f0.chunk.js.map": "/masterPortfolio/static/js/618.be49c7f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a6b2bd11.js"
+    "static/js/main.baff55f8.js"
   ]
 }
