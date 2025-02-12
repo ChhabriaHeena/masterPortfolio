@@ -15,6 +15,10 @@ const Contact = () => {
 
     const classes = useStyles();
 
+    const handleChange = ()=>{
+        console.log("handle change")
+    }
+
     return (
         <div>
             <Grid container>
@@ -43,6 +47,15 @@ const Contact = () => {
                     </div>
                 </Grid>
             </Grid>
+
+            <div>
+                <form action="">
+                    <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
+                    <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
+                    <textarea name="message" placeholder="Message" onChange={handleChange} required />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     )
 
