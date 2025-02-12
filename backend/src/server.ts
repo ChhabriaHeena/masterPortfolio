@@ -78,6 +78,10 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Portfolio!');
+});
+
 app.get('/messages', async (req: any, res: { json: (arg0: any) => void; }) => {
   const messages = await Contact.find();
   res.json(messages);
