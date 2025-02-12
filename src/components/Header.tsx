@@ -83,7 +83,7 @@ const Header = (props: any) => {
               <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                 {navItems.map((item) => (
                   <Button key={item} sx={{ color: '#fff' }}>
-                    <Link style={{ color: '#fff', textDecoration:"none" }} href={`masterPortfolio/${item}`}>{item}</Link>
+                    <Link style={{ color: '#fff', textDecoration:"none" }} href={`${item}`}>{item}</Link>
                   </Button>
                 ))}
               </Box>
