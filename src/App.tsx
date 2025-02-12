@@ -1,11 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Suspense, lazy } from "react";
+// import './App.css';
+import Portfolio from './components/Portfolio';
+
+const LazyPortfolio = lazy(()=> import('./components/Portfolio'))
 
 function App() {
   return (
     <div className="App">
-     <h1>Comming Soon</h1>
+      <Suspense fallback="Portfolio is Loading..."><LazyPortfolio/></Suspense>
+      {/* <Portfolio/> */}
     </div>
   );
 }
