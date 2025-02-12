@@ -14,8 +14,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useStyles from './styles/Header.styles';
-import { Link } from '@mui/material';
-// import { Link } from 'react-router-dom';
+// import { Link } from '@mui/material';
+import { Link } from 'react-router-dom';
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.
@@ -78,12 +78,12 @@ const Header = (props: any) => {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
               >
-                <Link href="/masterPortfolio" style={{ color: '#fff', textDecoration:"none" }}>Heena Chhabria</Link>
+                <Link to="/" style={{ color: '#fff', textDecoration:"none" }}>Heena Chhabria</Link>
               </Typography>
               <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                 {navItems.map((item) => (
                   <Button key={item} sx={{ color: '#fff' }}>
-                    <Link style={{ color: '#fff', textDecoration:"none" }} href={`/masterPortfolio/${item}`}>{item}</Link>
+                    <Link style={{ color: '#fff', textDecoration:"none" }} to={`/${item.toLowerCase()}`}>{item}</Link>
                   </Button>
                 ))}
               </Box>

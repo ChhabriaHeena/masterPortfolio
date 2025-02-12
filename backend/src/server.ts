@@ -84,10 +84,10 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Portfolio!');
 });
 
-app.get('/contact', (req, res) => {
-  res.send('Welcome to the Portfolio!', req, res);
-  console.log(req, "res: ", res)
-});
+// app.get('/contact', (req, res) => {
+//   res.send('Welcome to the Portfolio!', req, res);
+//   console.log(req, "res: ", res)
+// });
 
 app.get('/messages', async (req: any, res: { json: (arg0: any) => void; }) => {
   const messages = await Contact.find();
