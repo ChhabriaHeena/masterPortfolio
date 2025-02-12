@@ -106,6 +106,9 @@ app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* (
         res.status(500).json({ error: 'Error saving message' });
     }
 }));
+app.get('/', (req, res) => {
+    res.send('Welcome to the Portfolio!');
+});
 app.get('/messages', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const messages = yield Contact.find();
     res.json(messages);
