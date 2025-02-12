@@ -17,13 +17,13 @@ const Portfolio = () => {
       <Router>
           <Header/>
         <Routes>
-          <Route path='/' element={<FrontPage />} />
-          <Route path='/home' element={<FrontPage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/hire' element={<Hire />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='masterPortfolio/' element={<FrontPage />} />
+          <Route path='masterPortfolio/home' element={<FrontPage />} />
+          <Route path='masterPortfolio/about' element={<About />} />
+          <Route path='masterPortfolio/skills' element={<Skills />} />
+          <Route path='masterPortfolio/projects' element={<Projects />} />
+          <Route path='masterPortfolio/hire' element={<Hire />} />
+          <Route path='masterPortfolio/contact' element={<Contact />} />
 
         </Routes>
           <Footer/>
