@@ -79,7 +79,7 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
   }
 });
 
-app.get('/', (req, res) => {
+app.get('/', (req: any, res: any) => {
   res.send('Welcome to the Portfolio!');
 });
 

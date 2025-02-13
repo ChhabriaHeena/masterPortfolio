@@ -1,3 +1,4 @@
+"use strict";
 module.exports = {
     MONGOURI: "mongodb+srv://heenarc23:heenarc23@cluster0.s7vdy.mongodb.net/master_portfolio?retryWrites=true&w=majority&appName=Cluster0",
     // JWT_SECRET: "yugtyfthnuyftyijmojhyu",
