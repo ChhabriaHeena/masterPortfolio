@@ -103,7 +103,7 @@ app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* (
         res.status(201).json({ message: 'Message received!' });
         if (res.status(201)) {
             yield transporter.sendMail({
-                from: '"Heena" heenarc23@gmail.com',
+                from: '"Heena" <heenarc23@gmail.com>',
                 to: newMessage === null || newMessage === void 0 ? void 0 : newMessage.email,
                 subject: `Your request has been received.`,
                 text: `Thanks for requesting us. We will get back to you soon`

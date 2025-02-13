@@ -77,7 +77,7 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
 
     if (res.status(201)) {
       await transporter.sendMail({
-        from: '"Heena" heenarc23@gmail.com',
+        from: '"Heena" <heenarc23@gmail.com>',
         to: newMessage?.email,
         subject: `Your request has been received.`,
         text: `Thanks for requesting us. We will get back to you soon`
