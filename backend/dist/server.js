@@ -87,6 +87,7 @@ const ContactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', ContactSchema);
 app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        console.log(req, "res: ", res);
         const { name, email, message } = req.body;
         const newMessage = new Contact({ name, email, message });
         yield newMessage.save();
@@ -103,15 +104,20 @@ app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* (
         res.status(201).json({ message: 'Message received!' });
     }
     catch (err) {
-        res.status(500).json({ error: 'Error saving message' });
+        res.status(500).json({ error: `Error saving message, ${err}` });
     }
 }));
 app.get('/', (req, res) => {
     res.send('Welcome to the Portfolio!');
 });
+// app.get('/contact', (req, res) => {
+//   res.send('Welcome to the Portfolio!', req, res);
+//   console.log(req, "res: ", res)
+// });
 app.get('/messages', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const messages = yield Contact.find();
     res.json(messages);
+    console.log(messages);
 }));
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

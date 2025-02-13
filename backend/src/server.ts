@@ -64,7 +64,7 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
-      // auth: { user: process.env.EMAIL, pass: process.env.EMAIL_PASS }
+      auth: { user: process.env.EMAIL, pass: process.env.EMAIL_PASS }
     });
 
     await transporter.sendMail({

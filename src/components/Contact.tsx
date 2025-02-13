@@ -27,19 +27,6 @@ const Contact = () => {
         e.preventDefault();
 
 
-        const responseGet = await fetch("https://masterportfolio-tm5w.onrender.com/contact", {
-            method: "GET",
-            // headers: { 'Content-Type': 'application/json' },
-            // body: JSON.stringify(formData),
-        });
-
-        console.log("response: ",responseGet)
-
-        // const dataGet = await responseGet.json();
-        // console.log(dataGet)
-        // alert(dataGet.message);
-
-
         const response = await fetch("https://masterportfolio-tm5w.onrender.com/contact", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
