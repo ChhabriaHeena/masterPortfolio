@@ -101,6 +101,14 @@ app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* (
             text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
         });
         res.status(201).json({ message: 'Message received!' });
+        if (res.status(201)) {
+            yield transporter.sendMail({
+                from: 'heenarc23@gmail.com',
+                to: newMessage === null || newMessage === void 0 ? void 0 : newMessage.email,
+                subject: `Your request has been received.`,
+                text: `Thanks for requesting us. We will get back to you soon`
+            });
+        }
     }
     catch (err) {
         res.status(500).json({ error: `Error saving message, ${err}` });

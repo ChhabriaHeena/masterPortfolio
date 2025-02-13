@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => console.log('MongoDB Connected'))
+  .then(() => console.log('MongoDB Connected'))
   .catch((err: any) => console.log(err));
 
 // mongoose.connect('mongodb+srv://heenarc23:HlE5OEFzT8s25QGC@cluster0.rlwum.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
@@ -74,6 +74,15 @@ app.post('/contact', async (req: { body: { name: any; email: any; message: any; 
     });
 
     res.status(201).json({ message: 'Message received!' });
+
+    if (res.status(201)) {
+      await transporter.sendMail({
+        from: 'heenarc23@gmail.com',
+        to: newMessage?.email,
+        subject: `Your request has been received.`,
+        text: `Thanks for requesting us. We will get back to you soon`
+      });
+    }
   } catch (err) {
     res.status(500).json({ error: `Error saving message, ${err}` });
   }
