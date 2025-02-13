@@ -87,7 +87,6 @@ const ContactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', ContactSchema);
 app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        console.log(req, "res: ", res);
         const { name, email, message } = req.body;
         const newMessage = new Contact({ name, email, message });
         yield newMessage.save();
@@ -98,7 +97,7 @@ app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* (
         yield transporter.sendMail({
             from: process.env.EMAIL,
             to: 'heenarc23@gmail.com',
-            subject: 'New Contact Form Submission',
+            subject: `New Contact Form Submission from ${newMessage === null || newMessage === void 0 ? void 0 : newMessage.email}`,
             text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
         });
         res.status(201).json({ message: 'Message received!' });
@@ -117,7 +116,6 @@ app.get('/', (req, res) => {
 app.get('/messages', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const messages = yield Contact.find();
     res.json(messages);
-    console.log(messages);
 }));
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
