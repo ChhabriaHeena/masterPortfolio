@@ -71,11 +71,12 @@ const Contact = () => {
                             <form action="" onSubmit={handleSubmit}>
                                 <FormControl>
                                     <FormLabel>Name</FormLabel>
-                                    <Input type="text" name="name" placeholder="Name" size="md" variant="outlined" onChange={handleChange} required />
+                                    <Input className={classes.formFields} type="text" name="name" placeholder="Name" size="md" variant="outlined" onChange={handleChange} required />
                                     <FormLabel>Email</FormLabel>
-                                    <Input type="email" name="email" placeholder="Email" size="md" variant="outlined" onChange={handleChange} required />
-                                <Textarea name="message" placeholder="Message" minRows={2} variant="outlined" size="lg" onChange={handleChange} required />
-                                <Button type="submit" variant="contained">Send</Button>
+                                    <Input className={classes.formFields} type="email" name="email" placeholder="Email" size="md" variant="outlined" onChange={handleChange} required />
+                                    <FormLabel>Message</FormLabel>
+                                     <Textarea className={classes.formFields} name="message" placeholder="Message" minRows={2} variant="outlined" size="lg" onChange={handleChange} required />
+                                    <Button type="submit" variant="contained">Send</Button>
                                 </FormControl>
                             </form>
                         </div>

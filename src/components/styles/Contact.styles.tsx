@@ -15,7 +15,11 @@ const useStyles = makeStyles(() => ({
     },
     contactForm:{
         width:"70%",
-        paddingLeft:"10%"
+        paddingLeft:"15%",
+        marginTop:"3%"
+    },
+    formFields:{
+        marginBottom:"3%"
     }
 
 }));
