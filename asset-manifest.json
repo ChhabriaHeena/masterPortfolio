@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.0366a46a.js",
+    "main.js": "/masterPortfolio/static/js/main.3fd0e87e.js",
     "static/css/464.b1a9d572.chunk.css": "/masterPortfolio/static/css/464.b1a9d572.chunk.css",
-    "static/js/464.fd48f3e9.chunk.js": "/masterPortfolio/static/js/464.fd48f3e9.chunk.js",
+    "static/js/464.d368e974.chunk.js": "/masterPortfolio/static/js/464.d368e974.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
-    "static/js/618.be49c7f0.chunk.js": "/masterPortfolio/static/js/618.be49c7f0.chunk.js",
+    "static/js/789.36113def.chunk.js": "/masterPortfolio/static/js/789.36113def.chunk.js",
     "static/media/Heena_Chhabria.webp": "/masterPortfolio/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
     "static/media/about-me.jpg": "/masterPortfolio/static/media/about-me.683e8d578b41bc8928c8.jpg",
     "static/media/contactme.avif": "/masterPortfolio/static/media/contactme.b0aec40a557fcf09b3df.avif",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.0366a46a.js.map": "/masterPortfolio/static/js/main.0366a46a.js.map",
+    "main.3fd0e87e.js.map": "/masterPortfolio/static/js/main.3fd0e87e.js.map",
     "464.b1a9d572.chunk.css.map": "/masterPortfolio/static/css/464.b1a9d572.chunk.css.map",
-    "464.fd48f3e9.chunk.js.map": "/masterPortfolio/static/js/464.fd48f3e9.chunk.js.map",
+    "464.d368e974.chunk.js.map": "/masterPortfolio/static/js/464.d368e974.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
-    "618.be49c7f0.chunk.js.map": "/masterPortfolio/static/js/618.be49c7f0.chunk.js.map"
+    "789.36113def.chunk.js.map": "/masterPortfolio/static/js/789.36113def.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0366a46a.js"
+    "static/js/main.3fd0e87e.js"
   ]
 }
