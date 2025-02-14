@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.047e516b.js",
+    "main.js": "/masterPortfolio/static/js/main.37c14058.js",
     "static/css/936.9745207a.chunk.css": "/masterPortfolio/static/css/936.9745207a.chunk.css",
-    "static/js/936.dc2275b6.chunk.js": "/masterPortfolio/static/js/936.dc2275b6.chunk.js",
+    "static/js/936.f4d7b43b.chunk.js": "/masterPortfolio/static/js/936.f4d7b43b.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
-    "static/js/255.683f32db.chunk.js": "/masterPortfolio/static/js/255.683f32db.chunk.js",
+    "static/js/36.5470a764.chunk.js": "/masterPortfolio/static/js/36.5470a764.chunk.js",
     "static/media/Aafiya-Mediretreats.png": "/masterPortfolio/static/media/Aafiya-Mediretreats.c20c0f3ba11c1e8be1ed.png",
     "static/media/Heena_Chhabria.webp": "/masterPortfolio/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
     "static/media/about-me.jpg": "/masterPortfolio/static/media/about-me.683e8d578b41bc8928c8.jpg",
     "static/media/contactme.avif": "/masterPortfolio/static/media/contactme.b0aec40a557fcf09b3df.avif",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.047e516b.js.map": "/masterPortfolio/static/js/main.047e516b.js.map",
+    "main.37c14058.js.map": "/masterPortfolio/static/js/main.37c14058.js.map",
     "936.9745207a.chunk.css.map": "/masterPortfolio/static/css/936.9745207a.chunk.css.map",
-    "936.dc2275b6.chunk.js.map": "/masterPortfolio/static/js/936.dc2275b6.chunk.js.map",
+    "936.f4d7b43b.chunk.js.map": "/masterPortfolio/static/js/936.f4d7b43b.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
-    "255.683f32db.chunk.js.map": "/masterPortfolio/static/js/255.683f32db.chunk.js.map"
+    "36.5470a764.chunk.js.map": "/masterPortfolio/static/js/36.5470a764.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.047e516b.js"
+    "static/js/main.37c14058.js"
   ]
 }
