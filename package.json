@@ -9,6 +9,7 @@
     "@emotion/styled": "^11.14.0",
     "@material-ui/styles": "^4.11.5",
     "@mui/icons-material": "^5.16.14",
+    "@mui/joy": "^5.0.0-beta.51",
     "@mui/material": "^5.16.14",
     "@mui/styles": "^5.16.7",
     "@rollup/plugin-inject": "^5.0.5",

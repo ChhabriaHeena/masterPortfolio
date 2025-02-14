@@ -11,8 +11,11 @@ const useStyles = makeStyles(() => ({
         height:"90vh"
     },
     contactMeContent:{
-        display:"flex",
-        alignItems:"center"
+        marginTop:"10%"
+    },
+    contactForm:{
+        width:"70%",
+        paddingLeft:"10%"
     }
 
 }));

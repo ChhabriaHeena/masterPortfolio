@@ -12,7 +12,8 @@ const useStyles = makeStyles(() => ({
         marginTop: "5%",
         backgroundColor:"#A5ACFE",
         textAlign:"center",
-        padding:"2% 0"
+        padding:"2% 0",
+        marginBottom:"5%"
     },
     bannerGridContainer: {
         // height: "100vh"
