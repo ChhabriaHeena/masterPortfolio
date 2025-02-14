@@ -1,0 +1,6 @@
+{
+    "redirects": [
+      { "source": "/", "destination": "/masterPortfolio", "permanent": false }
+    ]
+  }
+  
