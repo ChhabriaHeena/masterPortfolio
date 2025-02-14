@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.3fd0e87e.js",
+    "main.js": "/masterPortfolio/static/js/main.ed1b1b16.js",
     "static/css/464.b1a9d572.chunk.css": "/masterPortfolio/static/css/464.b1a9d572.chunk.css",
-    "static/js/464.d368e974.chunk.js": "/masterPortfolio/static/js/464.d368e974.chunk.js",
+    "static/js/464.3e322aa3.chunk.js": "/masterPortfolio/static/js/464.3e322aa3.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
     "static/js/789.36113def.chunk.js": "/masterPortfolio/static/js/789.36113def.chunk.js",
     "static/media/Heena_Chhabria.webp": "/masterPortfolio/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
@@ -11,14 +11,14 @@
     "static/media/contactme.avif": "/masterPortfolio/static/media/contactme.b0aec40a557fcf09b3df.avif",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.3fd0e87e.js.map": "/masterPortfolio/static/js/main.3fd0e87e.js.map",
+    "main.ed1b1b16.js.map": "/masterPortfolio/static/js/main.ed1b1b16.js.map",
     "464.b1a9d572.chunk.css.map": "/masterPortfolio/static/css/464.b1a9d572.chunk.css.map",
-    "464.d368e974.chunk.js.map": "/masterPortfolio/static/js/464.d368e974.chunk.js.map",
+    "464.3e322aa3.chunk.js.map": "/masterPortfolio/static/js/464.3e322aa3.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
     "789.36113def.chunk.js.map": "/masterPortfolio/static/js/789.36113def.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.3fd0e87e.js"
+    "static/js/main.ed1b1b16.js"
   ]
 }
