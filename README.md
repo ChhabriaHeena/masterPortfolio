@@ -1,3 +1,14 @@
+Website:-
+    On GitHub: https://chhabriaheena.github.io/masterPortfolio/
+    On Vercel: https://master-portfolio-one.vercel.app/masterPortfolio
+
+A Full-Stack Personal Website.
+
+I used Render.com for Backend Hosting and Auto Deployment.
+It provides a Platform-as-a-Service (PaaS) model, allowing developers to focus on coding without managing infrastructure
+
+HTML5, CSS3, Typescript, React, Node, Express, MongoDB
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
