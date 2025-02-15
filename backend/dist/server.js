@@ -88,8 +88,8 @@ const ContactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', ContactSchema);
 app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { name, email, message } = req.body;
-        const newMessage = new Contact({ name, email, message });
+        const { name, email, message, createdAt } = req.body;
+        const newMessage = new Contact({ name, email, message, createdAt });
         yield newMessage.save();
         const transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -99,7 +99,7 @@ app.post('/contact', (req, res) => __awaiter(void 0, void 0, void 0, function* (
             from: process.env.EMAIL,
             to: 'heenarc23@gmail.com',
             subject: `New Contact Form Submission from ${newMessage === null || newMessage === void 0 ? void 0 : newMessage.email}`,
-            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nCreatedAt: ${createdAt}`
         });
         res.status(201).json({ message: 'Message received!' });
         if (res.status(201)) {
