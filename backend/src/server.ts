@@ -49,7 +49,7 @@ mongoose.connect(process.env.MONGO_URI, {
 const ContactSchema = new mongoose.Schema({
   name: { type: String, trim: true },
   email: { type: String, match: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ },
-  message: { type: String, minlength: 10 },
+  message: { type: String},
   createdAt: { type: Date, default: Date.now }
 }, { timestamps: true });
 

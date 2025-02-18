@@ -27,6 +27,7 @@ const Contact = () => {
 
 
     const handleSubmit = async (e: any) => {
+        console.log("submit: ",e)
         e.preventDefault();
 
 
@@ -75,7 +76,7 @@ const Contact = () => {
                                     <FormLabel>Email</FormLabel>
                                     <Input className={classes.formFields} type="email" name="email" placeholder="Email" size="md" variant="outlined" onChange={handleChange} required />
                                     <FormLabel>Message</FormLabel>
-                                     <Textarea className={classes.formFields} name="message" placeholder="Message" minRows={2} variant="outlined" size="lg" onChange={handleChange} required />
+                                     <Textarea className={classes.formFields} name="message" placeholder="Message" minRows={2} variant="outlined" size="lg" onChange={handleChange} />
                                     <Button type="submit" variant="contained">Send</Button>
                                 </FormControl>
                             </form>
