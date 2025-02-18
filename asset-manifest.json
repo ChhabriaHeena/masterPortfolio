@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.857df3b6.js",
+    "main.js": "/masterPortfolio/static/js/main.cbece3c4.js",
     "static/css/936.9745207a.chunk.css": "/masterPortfolio/static/css/936.9745207a.chunk.css",
-    "static/js/936.68a16fb7.chunk.js": "/masterPortfolio/static/js/936.68a16fb7.chunk.js",
+    "static/js/936.69571068.chunk.js": "/masterPortfolio/static/js/936.69571068.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
-    "static/js/36.5470a764.chunk.js": "/masterPortfolio/static/js/36.5470a764.chunk.js",
+    "static/js/279.932b3fec.chunk.js": "/masterPortfolio/static/js/279.932b3fec.chunk.js",
     "static/media/Aafiya-Mediretreats.png": "/masterPortfolio/static/media/Aafiya-Mediretreats.c20c0f3ba11c1e8be1ed.png",
     "static/media/Heena_Chhabria.webp": "/masterPortfolio/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
     "static/media/about-me.jpg": "/masterPortfolio/static/media/about-me.683e8d578b41bc8928c8.jpg",
     "static/media/contactme.avif": "/masterPortfolio/static/media/contactme.b0aec40a557fcf09b3df.avif",
+    "static/media/Spinner@1x-1.0s-200px-200px.svg": "/masterPortfolio/static/media/Spinner@1x-1.0s-200px-200px.0a93e641478da832c21ffe7bbb899ce5.svg",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.857df3b6.js.map": "/masterPortfolio/static/js/main.857df3b6.js.map",
+    "main.cbece3c4.js.map": "/masterPortfolio/static/js/main.cbece3c4.js.map",
     "936.9745207a.chunk.css.map": "/masterPortfolio/static/css/936.9745207a.chunk.css.map",
-    "936.68a16fb7.chunk.js.map": "/masterPortfolio/static/js/936.68a16fb7.chunk.js.map",
+    "936.69571068.chunk.js.map": "/masterPortfolio/static/js/936.69571068.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
-    "36.5470a764.chunk.js.map": "/masterPortfolio/static/js/36.5470a764.chunk.js.map"
+    "279.932b3fec.chunk.js.map": "/masterPortfolio/static/js/279.932b3fec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.857df3b6.js"
+    "static/js/main.cbece3c4.js"
   ]
 }
