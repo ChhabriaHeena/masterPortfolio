@@ -13,7 +13,9 @@ import { IconButton } from '@mui/material';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Aafiya from './images/Aafiya-Mediretreats.png'
+import Netflix from './images/Netflix-Clone.png'
 import { Link } from 'react-router-dom'
+// import projectContent from './projectContent.json'
 
 const Projects = () => {
 
@@ -33,22 +35,22 @@ const Projects = () => {
 
   const projectContent = [
     {
-      image: Aafiya,
-      alt: "Aafiya",
-      cardTitle: "Aafiya Mediretreats",
-      cardParagraph: "Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Owl Carousel'],
+      image: Netflix,
+      alt: "Netflix",
+      cardTitle: "Netflix Clone",
+      cardParagraph: "This web app is the clone of original Netflix application",
+      cardTech: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
       cardEnding: "I have tried my excellence to make the website as responsive as possible",
       iconButtons: [
         {
           view: "Website",
           icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Aafiya-Mediretreats/"
+          to: "https://chhabriaheena.github.io/netflix-clone/"
         },
         {
           view: "GitHub",
           icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Aafiya-Mediretreats"
+          to: "https://github.com/ChhabriaHeena/netflix-clone"
         }
       ]
     },
@@ -74,21 +76,21 @@ const Projects = () => {
     },
     {
       image: Aafiya,
-      alt: "Aafiya",
-      cardTitle: "Aafiya Mediretreats",
-      cardParagraph: "Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Owl Carousel'],
+      alt: "Color Changer",
+      cardTitle: "Color Changer",
+      cardParagraph: "Color Changer itself means changing color. This is a React Web app which changes the color as per your request. Also it has Light and Dark mode.",
+      cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
       cardEnding: "I have tried my excellence to make the website as responsive as possible",
       iconButtons: [
         {
           view: "Website",
           icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Aafiya-Mediretreats/"
+          to: "https://chhabriaheena.github.io/Color-Changer/"
         },
         {
           view: "GitHub",
           icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Aafiya-Mediretreats"
+          to: "https://github.com/ChhabriaHeena/Color-Changer"
         }
       ]
     },
@@ -189,14 +191,14 @@ const Projects = () => {
                   <Card>
                     <CardMedia component='img'
                       height='250'
-                      image={project?.image} alt={project?.alt} />
+                      image={project?.image} alt={project?.alt} className={classes.mediaStyle}/>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">{project?.cardTitle}</Typography>
                       <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.cardParagraph}</Typography>
                       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                         <ol>Technologies Used Are:
                           {
-                            project?.cardTech.map((tech: any, techIndex: number) => (
+                            project && project?.cardTech && project?.cardTech.map((tech: any, techIndex: number) => (
                               <li>{tech}</li>
 
                             ))}
@@ -223,172 +225,6 @@ const Projects = () => {
               </div>
             ))
           }
-          <div className='item'>
-            <Card>
-              <CardMedia component='img'
-                height='250'
-                image={Aafiya} alt='Aafiya' />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">Aafiya Mediretreats</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  <ol>Technologies Used Are:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Owl Carousel</li>
-                  </ol>
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>I have tried my excellence to make the website as responsive as possible</Typography>
-              </CardContent>
-              <CardActions>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://chhabriaheena.github.io/Aafiya-Mediretreats/">
-                    <VisibilityOutlinedIcon />
-                  </Link>
-                </IconButton>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://github.com/ChhabriaHeena/Aafiya-Mediretreats">
-                    <GitHubIcon />
-                  </Link>
-                </IconButton>
-              </CardActions>
-            </Card>
-          </div>
-          <div className='item'>
-            <Card>
-              <CardMedia component='img'
-                height='250'
-                image={Aafiya} alt='Aafiya' />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">Aafiya Mediretreats</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  <ol>Technologies Used Are:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Owl Carousel</li>
-                  </ol>
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>I have tried my excellence to make the website as responsive as possible</Typography>
-              </CardContent>
-              <CardActions>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://chhabriaheena.github.io/Aafiya-Mediretreats/">
-                    <VisibilityOutlinedIcon />
-                  </Link>
-                </IconButton>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://github.com/ChhabriaHeena/Aafiya-Mediretreats">
-                    <GitHubIcon />
-                  </Link>
-                </IconButton>
-              </CardActions>
-            </Card>
-          </div>
-          <div className='item'>
-            <Card>
-              <CardMedia component='img'
-                height='250'
-                image={Aafiya} alt='Aafiya' />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">Aafiya Mediretreats</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  <ol>Technologies Used Are:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Owl Carousel</li>
-                  </ol>
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>I have tried my excellence to make the website as responsive as possible</Typography>
-              </CardContent>
-              <CardActions>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://chhabriaheena.github.io/Aafiya-Mediretreats/">
-                    <VisibilityOutlinedIcon />
-                  </Link>
-                </IconButton>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://github.com/ChhabriaHeena/Aafiya-Mediretreats">
-                    <GitHubIcon />
-                  </Link>
-                </IconButton>
-              </CardActions>
-            </Card>
-          </div>
-          <div className='item'>
-            <Card>
-              <CardMedia component='img'
-                height='250'
-                image={Aafiya} alt='Aafiya' />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">Aafiya Mediretreats</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  <ol>Technologies Used Are:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Owl Carousel</li>
-                  </ol>
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>I have tried my excellence to make the website as responsive as possible</Typography>
-              </CardContent>
-              <CardActions>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://chhabriaheena.github.io/Aafiya-Mediretreats/">
-                    <VisibilityOutlinedIcon />
-                  </Link>
-                </IconButton>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://github.com/ChhabriaHeena/Aafiya-Mediretreats">
-                    <GitHubIcon />
-                  </Link>
-                </IconButton>
-              </CardActions>
-            </Card>
-          </div>
-          <div className='item'>
-            <Card>
-              <CardMedia component='img'
-                height='250'
-                image={Aafiya} alt='Aafiya' />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">Aafiya Mediretreats</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  <ol>Technologies Used Are:
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Owl Carousel</li>
-                  </ol>
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>I have tried my excellence to make the website as responsive as possible</Typography>
-              </CardContent>
-              <CardActions>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://chhabriaheena.github.io/Aafiya-Mediretreats/">
-                    <VisibilityOutlinedIcon />
-                  </Link>
-                </IconButton>
-                <IconButton>
-                  <Link style={{ color: "grey" }} to="https://github.com/ChhabriaHeena/Aafiya-Mediretreats">
-                    <GitHubIcon />
-                  </Link>
-                </IconButton>
-              </CardActions>
-            </Card>
-          </div>
-
         </OwlCarousel>
       </div>
     </div>

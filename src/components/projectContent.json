@@ -1,0 +1,22 @@
+[
+    {
+      "image": "Netflix",
+      "alt": "Netflix",
+      "cardTitle": "Netflix Clone",
+      "cardParagraph": "This web app is the clone of original Netflix application",
+      "cardTech": ["React", "HTML", "CSS", "JavaScript", "Bootstrap"],
+      "cardEnding": "I have tried my excellence to make the website as responsive as possible",
+      "iconButtons": [
+        {
+          "view": "Website",
+          "icon": "<VisibilityOutlinedIcon />",
+          "to": "https://chhabriaheena.github.io/netflix-clone/"
+        },
+        {
+          "view": "GitHub",
+          "icon": "<GitHubIcon />",
+          "to": "https://github.com/ChhabriaHeena/netflix-clone"
+        }
+      ]
+    }
+  ]
