@@ -1,4 +1,4 @@
-import { Button, Grid } from "@mui/material";
+import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -20,13 +20,19 @@ const Contact = () => {
 
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [loading, setLoading] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [responseData, setResponseData] = useState<any>();
 
     const handleChange = (e: any) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
 
-
-
+    const handleClose = () => {
+        setOpen(false)
+    }
+    const handleClickOpen = () => {
+        setOpen(true)
+    }
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         setLoading(true);
@@ -38,11 +44,11 @@ const Contact = () => {
 
         if (response?.status) {
             setLoading(false)
+            handleClickOpen()
         }
 
-        const data = await response.json();
-        console.log(data)
-        alert(data.message);
+        const data = await response?.json();
+        setResponseData(data?.message)
 
     }
 
@@ -87,6 +93,15 @@ const Contact = () => {
                     </div>
                 </Grid>
             </Grid>
+
+            <Dialog open={open} onClose={handleClose}>
+                <DialogTitle>
+                    Thanks for Contacting us!
+                </DialogTitle>
+                <DialogContent>
+                    <DialogContentText> Your request has been received. We will contact you soon.</DialogContentText>
+                </DialogContent>
+            </Dialog>
 
             {
                 loading && <Loader loading={loading} />
