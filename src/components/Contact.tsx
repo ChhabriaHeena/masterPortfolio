@@ -12,30 +12,33 @@ import Input from '@mui/joy/Input';
 import FormControl from '@mui/joy/FormControl';
 import FormLabel from '@mui/joy/FormLabel';
 import Textarea from '@mui/joy/Textarea';
+import Loader from './Loader';
 
 const Contact = () => {
 
     const classes = useStyles();
 
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e: any) => {
-        console.log("handle change")
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
 
 
 
     const handleSubmit = async (e: any) => {
-        console.log("submit: ",e)
         e.preventDefault();
-
-
+        setLoading(true);
         const response = await fetch("https://masterportfolio-tm5w.onrender.com/contact", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
         });
+
+        if (response?.status) {
+            setLoading(false)
+        }
 
         const data = await response.json();
         console.log(data)
@@ -45,7 +48,7 @@ const Contact = () => {
 
     return (
         <div>
-            <Grid container>
+            <Grid container className={`${loading ? "blur" : ""}`}>
                 <Grid item className={classes.contactImg} xs={12} md sm>
                     {/* Contact Me */}
                     <img className={classes.contactMe} src={contactMe} alt="image" />
@@ -76,7 +79,7 @@ const Contact = () => {
                                     <FormLabel>Email</FormLabel>
                                     <Input className={classes.formFields} type="email" name="email" placeholder="Email" size="md" variant="outlined" onChange={handleChange} required />
                                     <FormLabel>Message</FormLabel>
-                                     <Textarea className={classes.formFields} name="message" placeholder="Message" minRows={2} variant="outlined" size="lg" onChange={handleChange} />
+                                    <Textarea className={classes.formFields} name="message" placeholder="Message" minRows={2} variant="outlined" size="lg" onChange={handleChange} />
                                     <Button type="submit" variant="contained">Send</Button>
                                 </FormControl>
                             </form>
@@ -84,6 +87,10 @@ const Contact = () => {
                     </div>
                 </Grid>
             </Grid>
+
+            {
+                loading && <Loader loading={loading} />
+            }
 
         </div>
     )
