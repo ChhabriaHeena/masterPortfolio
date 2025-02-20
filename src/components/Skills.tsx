@@ -16,6 +16,7 @@ import FIREBASE from './images/FIREBASE.png'
 import BOOTSTRAP from './images/BOOTSTRAP.png'
 import AZURE from './images/AZURE.png'
 import AWS from './images/AWS.png'
+import NPM from './images/NPM.png'
 
 const Skills = () => {
 
@@ -62,6 +63,10 @@ const Skills = () => {
           title: "NODEJS",
           icon: NODEJS
         },
+        {
+          title: "NPM",
+          icon: NPM
+        },
       ]
     },
     {
@@ -73,14 +78,32 @@ const Skills = () => {
       ],
       iconButtons: [
         {
-          title: "HTML5",
-          icon: HTML5,
-          to: "https://chhabriaheena.github.io/netflix-clone/"
+          title: "AZURE",
+          icon: AZURE
         },
         {
-          view: "GitHub",
-          // icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/netflix-clone"
+          title: "FIREBASE",
+          icon: FIREBASE
+        },
+        {
+          title: "AWS",
+          icon: AWS
+        },
+        {
+          title: "GitHub",
+          icon: GitHub
+        },
+        {
+          title: "MONGODB",
+          icon: MONGODB
+        },
+        {
+          title: "RENDER",
+          icon: "RENDER"
+        },
+        {
+          title: "VERCEL",
+          icon: "VERCEL"
         }
       ]
     },
