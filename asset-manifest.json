@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.426f9a69.js",
-    "static/css/956.69ad338c.chunk.css": "/masterPortfolio/static/css/956.69ad338c.chunk.css",
-    "static/js/956.fe390074.chunk.js": "/masterPortfolio/static/js/956.fe390074.chunk.js",
+    "main.js": "/masterPortfolio/static/js/main.54481806.js",
+    "static/css/473.d39d0cc4.chunk.css": "/masterPortfolio/static/css/473.d39d0cc4.chunk.css",
+    "static/js/473.5e21c29f.chunk.js": "/masterPortfolio/static/js/473.5e21c29f.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
-    "static/js/855.919f7f29.chunk.js": "/masterPortfolio/static/js/855.919f7f29.chunk.js",
+    "static/js/6.ac756266.chunk.js": "/masterPortfolio/static/js/6.ac756266.chunk.js",
     "static/media/Drum-Kit.png": "/masterPortfolio/static/media/Drum-Kit.4e29228e7a84498acb73.png",
     "static/media/Netflix-Clone.png": "/masterPortfolio/static/media/Netflix-Clone.11033a3632ca147491c4.png",
     "static/media/Animate-Web-Page.png": "/masterPortfolio/static/media/Animate-Web-Page.a85088517aed6e164031.png",
@@ -22,14 +22,14 @@
     "static/media/Spinner@1x-1.0s-200px-200px.svg": "/masterPortfolio/static/media/Spinner@1x-1.0s-200px-200px.0a93e641478da832c21ffe7bbb899ce5.svg",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.426f9a69.js.map": "/masterPortfolio/static/js/main.426f9a69.js.map",
-    "956.69ad338c.chunk.css.map": "/masterPortfolio/static/css/956.69ad338c.chunk.css.map",
-    "956.fe390074.chunk.js.map": "/masterPortfolio/static/js/956.fe390074.chunk.js.map",
+    "main.54481806.js.map": "/masterPortfolio/static/js/main.54481806.js.map",
+    "473.d39d0cc4.chunk.css.map": "/masterPortfolio/static/css/473.d39d0cc4.chunk.css.map",
+    "473.5e21c29f.chunk.js.map": "/masterPortfolio/static/js/473.5e21c29f.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
-    "855.919f7f29.chunk.js.map": "/masterPortfolio/static/js/855.919f7f29.chunk.js.map"
+    "6.ac756266.chunk.js.map": "/masterPortfolio/static/js/6.ac756266.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.426f9a69.js"
+    "static/js/main.54481806.js"
   ]
 }
