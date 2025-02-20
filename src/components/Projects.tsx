@@ -263,14 +263,17 @@ const Projects = () => {
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">{project?.cardTitle}</Typography>
                       <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.cardParagraph}</Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }} style={{height:"23vh"}}>
+                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                        <div style={{height:"23vh"}}>
+
                         <ol>Technologies Used Are:
                           {
                             project && project?.cardTech && project?.cardTech.map((tech: any, techIndex: number) => (
                               <li>{tech}</li>
-
+                              
                             ))}
                         </ol>
+                            </div>
                       </Typography>
                       <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.cardEnding}</Typography>
                     </CardContent>
