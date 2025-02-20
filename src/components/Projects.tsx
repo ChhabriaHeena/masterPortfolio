@@ -186,7 +186,7 @@ const Projects = () => {
       <h1 className={classes.projectContent}>Projects</h1>
       <div className={classes.owlTheme}>
         <OwlCarousel className='owl-theme' items={3}
-          // lazyLoad={true} loop={true} autoplay={true} responsive={responsiveOptions}
+          lazyLoad={true} loop={true} autoplay={true} responsive={responsiveOptions}
           margin={10}>
 
           {
