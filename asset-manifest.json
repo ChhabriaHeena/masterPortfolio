@@ -1,32 +1,35 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.385e01ae.js",
-    "static/css/731.57ee3e18.chunk.css": "/masterPortfolio/static/css/731.57ee3e18.chunk.css",
-    "static/js/731.ed58437b.chunk.js": "/masterPortfolio/static/js/731.ed58437b.chunk.js",
+    "main.js": "/masterPortfolio/static/js/main.363eb621.js",
+    "static/css/42.4070d5d5.chunk.css": "/masterPortfolio/static/css/42.4070d5d5.chunk.css",
+    "static/js/42.6df4dc75.chunk.js": "/masterPortfolio/static/js/42.6df4dc75.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
     "static/js/855.919f7f29.chunk.js": "/masterPortfolio/static/js/855.919f7f29.chunk.js",
+    "static/media/Drum-Kit.png": "/masterPortfolio/static/media/Drum-Kit.4e29228e7a84498acb73.png",
     "static/media/Netflix-Clone.png": "/masterPortfolio/static/media/Netflix-Clone.11033a3632ca147491c4.png",
     "static/media/Animate-Web-Page.png": "/masterPortfolio/static/media/Animate-Web-Page.a85088517aed6e164031.png",
     "static/media/Aafiya-Mediretreats.png": "/masterPortfolio/static/media/Aafiya-Mediretreats.c20c0f3ba11c1e8be1ed.png",
     "static/media/List-of-Github-Users.png": "/masterPortfolio/static/media/List-of-Github-Users.5f2e263235519581a1f2.png",
     "static/media/Keeper-App.png": "/masterPortfolio/static/media/Keeper-App.be3f6e5f7bf35a286529.png",
+    "static/media/CSS-JS.png": "/masterPortfolio/static/media/CSS-JS.388daf4ce98b9e07ed0c.png",
     "static/media/Heena_Chhabria.webp": "/masterPortfolio/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
     "static/media/about-me.jpg": "/masterPortfolio/static/media/about-me.683e8d578b41bc8928c8.jpg",
     "static/media/ColorChanger.png": "/masterPortfolio/static/media/ColorChanger.4a05451319eb3657ac0b.png",
+    "static/media/calculator.png": "/masterPortfolio/static/media/calculator.e3747cb88222dc8d0739.png",
     "static/media/Crud-App.png": "/masterPortfolio/static/media/Crud-App.80ffca4c35563441757d.png",
     "static/media/contactme.avif": "/masterPortfolio/static/media/contactme.b0aec40a557fcf09b3df.avif",
     "static/media/Spinner@1x-1.0s-200px-200px.svg": "/masterPortfolio/static/media/Spinner@1x-1.0s-200px-200px.0a93e641478da832c21ffe7bbb899ce5.svg",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.385e01ae.js.map": "/masterPortfolio/static/js/main.385e01ae.js.map",
-    "731.57ee3e18.chunk.css.map": "/masterPortfolio/static/css/731.57ee3e18.chunk.css.map",
-    "731.ed58437b.chunk.js.map": "/masterPortfolio/static/js/731.ed58437b.chunk.js.map",
+    "main.363eb621.js.map": "/masterPortfolio/static/js/main.363eb621.js.map",
+    "42.4070d5d5.chunk.css.map": "/masterPortfolio/static/css/42.4070d5d5.chunk.css.map",
+    "42.6df4dc75.chunk.js.map": "/masterPortfolio/static/js/42.6df4dc75.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
     "855.919f7f29.chunk.js.map": "/masterPortfolio/static/js/855.919f7f29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.385e01ae.js"
+    "static/js/main.363eb621.js"
   ]
 }
