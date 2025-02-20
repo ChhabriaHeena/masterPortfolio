@@ -19,6 +19,9 @@ import KeeperApp from './images/Keeper-App.png'
 import CrudApp from './images/Crud-App.png'
 import ListofGithubUsers from './images/List-of-Github-Users.png'
 import AnimateWebPage from './images/Animate-Web-Page.png'
+import Calculator from './images/calculator.png'
+import DrumKit from './images/Drum-Kit.png'
+import CSSJS from './images/CSS-JS.png'
 import { Link } from 'react-router-dom'
 // import projectContent from './projectContent.json'
 
@@ -60,6 +63,26 @@ const Projects = () => {
       ]
     },
     {
+      image: Calculator,
+      alt: "Calculator",
+      cardTitle: "Calculator",
+      cardParagraph: "A React Web Application. Calculator. A web application used for calculations.",
+      cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
+      cardEnding: "I have tried my excellence to make the website as responsive as possible",
+      iconButtons: [
+        {
+          view: "Website",
+          icon: <VisibilityOutlinedIcon />,
+          to: "https://chhabriaheena.github.io/calculator/"
+        },
+        {
+          view: "GitHub",
+          icon: <GitHubIcon />,
+          to: "https://github.com/ChhabriaHeena/calculator"
+        }
+      ]
+    },
+    {
       image: Aafiya,
       alt: "Aafiya",
       cardTitle: "Aafiya Mediretreats",
@@ -76,26 +99,6 @@ const Projects = () => {
           view: "GitHub",
           icon: <GitHubIcon />,
           to: "https://github.com/ChhabriaHeena/Aafiya-Mediretreats"
-        }
-      ]
-    },
-    {
-      image: ColorChanger,
-      alt: "Color Changer",
-      cardTitle: "Color Changer",
-      cardParagraph: "Color Changer is a React Web app which changes the color as per your request. Also it has Light and Dark mode.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Color-Changer/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Color-Changer"
         }
       ]
     },
@@ -176,6 +179,66 @@ const Projects = () => {
           view: "GitHub",
           icon: <GitHubIcon />,
           to: "https://github.com/ChhabriaHeena/Animate_Web_Page"
+        }
+      ]
+    },
+    {
+      image: DrumKit,
+      alt: "JS Drum Kit",
+      cardTitle: "JS Drum Kit",
+      cardParagraph: "A Web Application. Which has different sounds. By pressing the buttons from Keyboard we can hear the sound.",
+      cardTech: ['HTML', 'CSS', 'JavaScript'],
+      cardEnding: "I have tried my excellence to make the website as responsive as possible",
+      iconButtons: [
+        {
+          view: "Website",
+          icon: <VisibilityOutlinedIcon />,
+          to: "https://chhabriaheena.github.io/Javascript_Drum_Kit/"
+        },
+        {
+          view: "GitHub",
+          icon: <GitHubIcon />,
+          to: "https://github.com/ChhabriaHeena/Javascript_Drum_Kit"
+        }
+      ]
+    },
+    {
+      image: CSSJS,
+      alt: "CSS Variable with JS",
+      cardTitle: "CSS Variable with JS",
+      cardParagraph: "A Website which has different variables. By changing the fields from UI the CSS properties will be changed.",
+      cardTech: ['HTML', 'CSS', 'JavaScript'],
+      cardEnding: "I have tried my excellence to make the website as responsive as possible",
+      iconButtons: [
+        {
+          view: "Website",
+          icon: <VisibilityOutlinedIcon />,
+          to: "https://chhabriaheena.github.io/CSS_Variable_with_JavaScript/"
+        },
+        {
+          view: "GitHub",
+          icon: <GitHubIcon />,
+          to: "https://github.com/ChhabriaHeena/CSS_Variable_with_JavaScript"
+        }
+      ]
+    },
+    {
+      image: ColorChanger,
+      alt: "Color Changer",
+      cardTitle: "Color Changer",
+      cardParagraph: "Color Changer is a React Web app which changes the color as per your request. Also it has Light and Dark mode.",
+      cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
+      cardEnding: "I have tried my excellence to make the website as responsive as possible",
+      iconButtons: [
+        {
+          view: "Website",
+          icon: <VisibilityOutlinedIcon />,
+          to: "https://chhabriaheena.github.io/Color-Changer/"
+        },
+        {
+          view: "GitHub",
+          icon: <GitHubIcon />,
+          to: "https://github.com/ChhabriaHeena/Color-Changer"
         }
       ]
     }
