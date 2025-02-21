@@ -13,7 +13,11 @@ const useStyles = makeStyles(() => ({
     },
     skillsContentStyling:{
         display:"flex",
-        alignItems:"center"
+        alignItems:"center",
+        // marginLeft:"7%"
+    },
+    skillsContainer:{
+        marginBottom:"20px"
     }
 }))
 

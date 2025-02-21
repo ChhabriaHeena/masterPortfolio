@@ -71,8 +71,8 @@ const Contact = () => {
                             <GoogleIcon />
                             <InstagramIcon />
                             <FacebookIcon />
-                            HackerRank
-                            CodeChef
+                            {/* HackerRank
+                            CodeChef */}
                         </div>
                         <div>
                             <Button variant="contained">See my Resume</Button>

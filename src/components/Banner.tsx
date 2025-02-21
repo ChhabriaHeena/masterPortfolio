@@ -16,9 +16,9 @@ const Banner = () => {
   return (
     <section className={classes.banner}>
 
-      <div className={classes.bannerMain}>
-        <Grid container className={classes.bannerGridContainer}>
-          <Grid item xs={12} md={6} sm={6} className={classes.bannerGridItemContent}>
+      <div>
+        <Grid container>
+          <Grid item xs={12} md={6} sm={6}>
             <div className={classes.bannerContent}>
 
               <h1>Heena Chhabria</h1>
@@ -34,8 +34,8 @@ const Banner = () => {
                 <GoogleIcon/>
                 <InstagramIcon/>
                 <FacebookIcon/>
-                HackerRank
-                CodeChef
+                {/* HackerRank
+                CodeChef */}
               </div>
               <div>
                 <Button variant="contained" startIcon={<StarIcon />}>Star me on Github</Button>

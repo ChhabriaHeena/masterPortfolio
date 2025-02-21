@@ -7,18 +7,6 @@ const useStyles = makeStyles(() => ({
         margin: "0",
         padding: "0"
     },
-    bannerMain: {
-        // height: "100vh",
-    },
-    bannerGridContainer: {
-        // height: "100vh"
-
-    },
-
-    bannerGridItemContent: {
-        // marginLeft: "10%"
-
-    },
     bannerContent: {
         marginLeft: "7%",
         marginTop: "10%",
