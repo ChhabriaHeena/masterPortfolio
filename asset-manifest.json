@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/masterPortfolio/static/js/main.dc735aa1.js",
+    "main.js": "/masterPortfolio/static/js/main.d841d202.js",
     "static/css/306.27798af3.chunk.css": "/masterPortfolio/static/css/306.27798af3.chunk.css",
-    "static/js/306.38a9e6a1.chunk.js": "/masterPortfolio/static/js/306.38a9e6a1.chunk.js",
+    "static/js/306.c965620e.chunk.js": "/masterPortfolio/static/js/306.c965620e.chunk.js",
     "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
     "static/js/6.ac756266.chunk.js": "/masterPortfolio/static/js/6.ac756266.chunk.js",
     "static/media/Drum-Kit.png": "/masterPortfolio/static/media/Drum-Kit.4e29228e7a84498acb73.png",
@@ -24,14 +24,14 @@
     "static/media/Spinner@1x-1.0s-200px-200px.svg": "/masterPortfolio/static/media/Spinner@1x-1.0s-200px-200px.0a93e641478da832c21ffe7bbb899ce5.svg",
     "index.html": "/masterPortfolio/index.html",
     "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
-    "main.dc735aa1.js.map": "/masterPortfolio/static/js/main.dc735aa1.js.map",
+    "main.d841d202.js.map": "/masterPortfolio/static/js/main.d841d202.js.map",
     "306.27798af3.chunk.css.map": "/masterPortfolio/static/css/306.27798af3.chunk.css.map",
-    "306.38a9e6a1.chunk.js.map": "/masterPortfolio/static/js/306.38a9e6a1.chunk.js.map",
+    "306.c965620e.chunk.js.map": "/masterPortfolio/static/js/306.c965620e.chunk.js.map",
     "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
     "6.ac756266.chunk.js.map": "/masterPortfolio/static/js/6.ac756266.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.dc735aa1.js"
+    "static/js/main.d841d202.js"
   ]
 }
