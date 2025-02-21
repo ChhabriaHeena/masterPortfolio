@@ -17,6 +17,8 @@ import BOOTSTRAP from './images/BOOTSTRAP.png'
 import AZURE from './images/AZURE.png'
 import AWS from './images/AWS.png'
 import NPM from './images/NPM.png'
+import FullStack from './images/FullStack.webp'
+import Cloud from './images/CloudDeveloper.png'
 
 const Skills = () => {
 
@@ -30,6 +32,7 @@ const Skills = () => {
         'UI/UX Responsiveness',
         ' Creating application backend in Node & Express'
       ],
+      img: FullStack,
       iconButtons: [
         {
           title: "HTML5",
@@ -73,9 +76,10 @@ const Skills = () => {
       designation: "Cloud Infra-Architecture",
       responsibilites: [
         'Experience working on multiple cloud platforms',
-        'Deploying backend server code on cloud to fetch on APIs',
+        'Deploying backend server code on cloud to fetch APIs',
         'Hosting and maintaining websites on cloud platforms instances along with integration of databases'
       ],
+      img: Cloud,
       iconButtons: [
         {
           title: "AZURE",
@@ -153,34 +157,38 @@ const Skills = () => {
               className={classes.skillsImage}>
               <img
                 className={classes.skillsContentImage}
-                src={aboutMeImage} alt="image" />
+                src={skills?.img} alt="image" />
             </Grid>
             <Grid item xs={12} md={6} sm={6} className={classes.skillsContentStyling}>
               <div>
                 <h3>{skills?.designation}</h3>
-                <h4>Responsibilites</h4>
+                {/* <h4>Responsibilites</h4> */}
                 <div>
                   {
                     skills?.iconButtons.map((button: any, iconIndex: number) => (
                       <Tooltip title={button?.title}>
-                      <img src={button?.icon} alt="" />
+                        <img src={button?.icon} alt="" />
                       </Tooltip>
                     ))
                   }
                 </div>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  <div
-                  // style={{ height: "23vh" }}
-                  >
-                    <ul>Responsibilites:
-                      {
-                        skills?.responsibilites.map((responsibility: any, respoIndex: number) => (
-                          <li>{responsibility}</li>
-                        ))
-                      }
-                    </ul>
-                  </div>
-                </Typography>
+                {
+                  skills?.responsibilites.map((responsibility: any, respoIndex: number) => (
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                      <div
+                      // style={{ height: "23vh" }}
+                      >
+                        <ul 
+                        // className={classes.ulStyle}
+                        >
+                          <h3>
+                            <li>{responsibility} </li>
+                            </h3>
+                        </ul>
+                      </div>
+                    </Typography>
+                  ))
+                }
               </div>
             </Grid>
           </Grid>
