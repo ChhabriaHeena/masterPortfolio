@@ -13,6 +13,11 @@ import FormControl from '@mui/joy/FormControl';
 import FormLabel from '@mui/joy/FormLabel';
 import Textarea from '@mui/joy/Textarea';
 import Loader from './Loader';
+import GitHub from './images/GITHUB.png'
+import LinkedIn from './images/Linkedin.png'
+import Instagram from './images/Instagram.png'
+import Facebook from './images/Facebook.png'
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
 
@@ -66,11 +71,15 @@ const Contact = () => {
                             I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with React, FrontEnd, Cloud and Opensource Development.
                         </h3>
                         <div>
-                            <GitHubIcon />
-                            <LinkedInIcon />
-                            <GoogleIcon />
-                            <InstagramIcon />
-                            <FacebookIcon />
+                            <Link to='https://github.com/ChhabriaHeena' target="_blank">
+                                <img src={GitHub} alt="" />
+                            </Link>
+                            <Link to='https://www.linkedin.com/in/heena-chhabria/' target="_blank">
+                                <img src={LinkedIn} alt="" />
+                            </Link>
+                            <Link to='https://www.instagram.com/towardshine/' target="_blank">
+                                <img src={Instagram} alt="" />
+                            </Link>
                             {/* HackerRank
                             CodeChef */}
                         </div>
