@@ -84,7 +84,11 @@ const Contact = () => {
                             CodeChef */}
                         </div>
                         <div>
-                            <Button variant="contained">See my Resume</Button>
+                            <Button variant="contained">
+                                <Link style={{ color: '#fff', textDecoration: "none" }} to='https://drive.google.com/file/d/1ytQYy1xvT_EUHSlkthH0SQyoJEr0_lSz/view' target="_blank">
+                                    See my Resume
+                                </Link>
+                            </Button>
                         </div>
                         <div className={classes.contactForm}>
                             <form action="" onSubmit={handleSubmit}>
