@@ -15,7 +15,7 @@ const Hire = () => {
         <h2>Hire Me</h2>
         <div>
           <Button variant="contained">
-            <Link style={{ color: '#fff', textDecoration: "none" }} to='/contact' target="_blank">
+            <Link style={{ color: '#fff', textDecoration: "none" }} to='/contact'>
               Contact
             </Link>
           </Button>

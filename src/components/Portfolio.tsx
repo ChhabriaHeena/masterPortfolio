@@ -23,7 +23,7 @@ const Portfolio = () => {
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/hire' element={<Hire />} />
-          <Route path='/masterPortfolio/contact' element={<Contact />} />
+          <Route path='/contact' element={<Contact />} />
 
         </Routes>
           <Footer/>
