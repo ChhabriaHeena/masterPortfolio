@@ -10,7 +10,8 @@ The "masterPortfolio" is a personal website that is a digital portfolio, highlig
 
 <hr>
 
-Tech Stack:
+Tech Stack: </br>
+
 Frontend:
 
 Languages & Frameworks: HTML5, CSS3, TypeScript, React
@@ -34,6 +35,7 @@ Version Control & CI/CD: GitHub integrated with hosting platforms for continuous
 <hr>
 
 Features & Functionalities:
+
 User Interface:
 
 Responsive design ensures compatibility across devices
@@ -53,12 +55,14 @@ Backend integration to handle form submissions and send emails
 <hr>
 
 Performance Optimization:
+
 Lazy Loading: Implemented to load components and images only when needed, improving initial page load speed.
 Code-Splitting: Dividing the JavaScript bundle into smaller chunks to enhance performance.
 
 <hr>
 
 Cloud Computing Aspects:
+
 Serverless Deployment:
 
 Frontend deployed on Vercel, offering automatic scaling and global CDN
