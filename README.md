@@ -31,6 +31,7 @@ Frontend Hosting: Vercel
 Backend Hosting: Render.com
 Version Control & CI/CD: GitHub integrated with hosting platforms for continuous deployment
 
+<hr>
 
 Features & Functionalities:
 User Interface:
@@ -49,10 +50,13 @@ Contact Form:
 Secure form allowing visitors to get in touch
 Backend integration to handle form submissions and send emails
 
+<hr>
+
 Performance Optimization:
 Lazy Loading: Implemented to load components and images only when needed, improving initial page load speed.
 Code-Splitting: Dividing the JavaScript bundle into smaller chunks to enhance performance.
 
+<hr>
 
 Cloud Computing Aspects:
 Serverless Deployment:
@@ -72,6 +76,7 @@ Continuous Integration/Continuous Deployment (CI/CD):
 GitHub Actions for automated testing and deployment
 Branch-based deployment previews for testing
 
+<hr>
 
 Challenges Faced & Solutions:
 
@@ -80,6 +85,7 @@ Deployment Pipelines:
 Challenge: Ensuring seamless deployment across different platforms
 Solution: Set up CI/CD pipelines using GitHub Actions for automated deployments
 
+<hr>
 
 Future Enhancements:
 
