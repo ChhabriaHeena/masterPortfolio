@@ -38,14 +38,14 @@ const Header = (props: any) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+      <Typography variant="h6" component={Link} sx={{ my: 2 }} to="/" style={{ color: '#000', textDecoration:"none" }}>
+        Heena Chhabria
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: 'center' }} component={Link} to={`/${item.toLowerCase()}`}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>

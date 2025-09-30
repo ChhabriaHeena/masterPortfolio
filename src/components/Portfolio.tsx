@@ -9,6 +9,7 @@ import Hire from './Hire';
 import Contact from './Contact';
 import Footer from './Footer';
 import FrontPage from './FrontPage';
+import Certificates from './Certificates';
 
 const Portfolio = () => {
   return (
@@ -24,6 +25,7 @@ const Portfolio = () => {
           <Route path='/projects' element={<Projects />} />
           <Route path='/hire' element={<Hire />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/certificates' element={<Certificates />} />
 
         </Routes>
           <Footer/>
