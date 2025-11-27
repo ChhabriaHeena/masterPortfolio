@@ -15,7 +15,7 @@ const Portfolio = () => {
   return (
     <div>
       {/* Portfolio */}
-      <Router basename="/masterPortfolio">
+      <Router>
           <Header/>
         <Routes>
           <Route path='/' element={<FrontPage />} />
