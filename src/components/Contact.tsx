@@ -85,7 +85,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <Button variant="contained">
-                                <Link style={{ color: '#fff', textDecoration: "none" }} to='https://drive.google.com/file/d/1fqDSDoKhMb4CAH_4q6_58lLokKclQJ9h/view' target="_blank">
+                                <Link style={{ color: '#fff', textDecoration: "none" }} to='https://drive.google.com/file/d/1gE46nRyEHgR8EC6n7ceTxrDJrCP9CDsa/view?usp=drive_open' target="_blank">
                                     See my Resume
                                 </Link>
                             </Button>
