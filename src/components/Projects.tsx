@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import useStyles from './styles/Projects.styles'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -27,6 +27,25 @@ import { Link } from 'react-router-dom'
 
 const Projects = () => {
 
+  const [projectData, setProjectData] = useState<any>();
+
+  const postData = () => {
+    fetch("https://portfolio-backend-tclu.onrender.com/projectdata", {
+      method: "get",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then((res: any) => res.json())
+      .then((data: any) => setProjectData(data))
+      .catch((error: any) => console.error(error))
+  }
+
+  useEffect(() => {
+    postData()
+
+  }, [])
+
   const classes = useStyles();
 
   const responsiveOptions = {
@@ -41,208 +60,208 @@ const Projects = () => {
     }
   }
 
-  const projectContent = [
-    {
-      image: Netflix,
-      alt: "Netflix",
-      cardTitle: "Netflix Clone",
-      cardParagraph: "This is the React web app which is the clone of original Netflix application.",
-      cardTech: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/netflix-clone/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/netflix-clone"
-        }
-      ]
-    },
-    {
-      image: Calculator,
-      alt: "Calculator",
-      cardTitle: "Calculator",
-      cardParagraph: "A React Web Application. Calculator. A web application used for calculations.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/calculator/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/calculator"
-        }
-      ]
-    },
-    {
-      image: Aafiya,
-      alt: "Aafiya",
-      cardTitle: "Aafiya Mediretreats",
-      cardParagraph: "Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Owl Carousel'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Aafiya-Mediretreats/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Aafiya-Mediretreats"
-        }
-      ]
-    },
-    {
-      image: KeeperApp,
-      alt: "Keeper App",
-      cardTitle: "Keeper App",
-      cardParagraph: "Keeper App is a React web application. More like To-Do List app where we can Add & Delete Notes as per our choices.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Keeper-App/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Keeper-App"
-        }
-      ]
-    },
-    {
-      image: CrudApp,
-      alt: "CRUD APP",
-      cardTitle: "CRUD APP",
-      cardParagraph: "CRUD App is a React web application. App where we can Add, Update & Remove User to our Team as per our choices.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://crud-bbdd8.web.app/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/CRUD_APPLICATION"
-        }
-      ]
-    },
-    {
-      image: ListofGithubUsers,
-      alt: "List of GitHub Users",
-      cardTitle: "List of GitHub Users",
-      cardParagraph: "List of GitHub Users App is a React web application. App name itself defines the List of Random People on GitHub.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Random_Github_Users/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Random_Github_Users"
-        }
-      ]
-    },
-    {
-      image: AnimateWebPage,
-      alt: "Animate Web Page",
-      cardTitle: "Animate Web Page",
-      cardParagraph: "A Project completely built on HTML & CSS. I have tried doing some Animation work here. Below is the link to view.",
-      cardTech: ['HTML', 'CSS'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Animate_Web_Page/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Animate_Web_Page"
-        }
-      ]
-    },
-    {
-      image: DrumKit,
-      alt: "JS Drum Kit",
-      cardTitle: "JS Drum Kit",
-      cardParagraph: "A Web Application. Which has different sounds. By pressing the buttons from Keyboard we can hear the sound.",
-      cardTech: ['HTML', 'CSS', 'JavaScript'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Javascript_Drum_Kit/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Javascript_Drum_Kit"
-        }
-      ]
-    },
-    {
-      image: CSSJS,
-      alt: "CSS Variable with JS",
-      cardTitle: "CSS Variable with JS",
-      cardParagraph: "A Website which has different variables. By changing the fields from UI the CSS properties will be changed.",
-      cardTech: ['HTML', 'CSS', 'JavaScript'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/CSS_Variable_with_JavaScript/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/CSS_Variable_with_JavaScript"
-        }
-      ]
-    },
-    {
-      image: ColorChanger,
-      alt: "Color Changer",
-      cardTitle: "Color Changer",
-      cardParagraph: "Color Changer is a React Web app which changes the color as per your request. Also it has Light and Dark mode.",
-      cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
-      cardEnding: "I have tried my excellence to make the website as responsive as possible",
-      iconButtons: [
-        {
-          view: "Website",
-          icon: <VisibilityOutlinedIcon />,
-          to: "https://chhabriaheena.github.io/Color-Changer/"
-        },
-        {
-          view: "GitHub",
-          icon: <GitHubIcon />,
-          to: "https://github.com/ChhabriaHeena/Color-Changer"
-        }
-      ]
-    }
-  ]
+  // const projectContent = [
+  //   {
+  //     image: Netflix,
+  //     alt: "Netflix",
+  //     title: "Netflix Clone",
+  //     cardParagraph: "This is the React web app which is the clone of original Netflix application.",
+  //     cardTech: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/netflix-clone/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/netflix-clone"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: Calculator,
+  //     alt: "Calculator",
+  //     cardTitle: "Calculator",
+  //     cardParagraph: "A React Web Application. Calculator. A web application used for calculations.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/calculator/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/calculator"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: Aafiya,
+  //     alt: "Aafiya",
+  //     cardTitle: "Aafiya Mediretreats",
+  //     cardParagraph: "Aafiya Mediretreats is a website related to treatements like Orthopaedics , Knee Replacement, Hospitals, Health care.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Owl Carousel'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/Aafiya-Mediretreats/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/Aafiya-Mediretreats"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: KeeperApp,
+  //     alt: "Keeper App",
+  //     cardTitle: "Keeper App",
+  //     cardParagraph: "Keeper App is a React web application. More like To-Do List app where we can Add & Delete Notes as per our choices.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/Keeper-App/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/Keeper-App"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: CrudApp,
+  //     alt: "CRUD APP",
+  //     cardTitle: "CRUD APP",
+  //     cardParagraph: "CRUD App is a React web application. App where we can Add, Update & Remove User to our Team as per our choices.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://crud-bbdd8.web.app/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/CRUD_APPLICATION"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: ListofGithubUsers,
+  //     alt: "List of GitHub Users",
+  //     cardTitle: "List of GitHub Users",
+  //     cardParagraph: "List of GitHub Users App is a React web application. App name itself defines the List of Random People on GitHub.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/Random_Github_Users/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/Random_Github_Users"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: AnimateWebPage,
+  //     alt: "Animate Web Page",
+  //     cardTitle: "Animate Web Page",
+  //     cardParagraph: "A Project completely built on HTML & CSS. I have tried doing some Animation work here. Below is the link to view.",
+  //     cardTech: ['HTML', 'CSS'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/Animate_Web_Page/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/Animate_Web_Page"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: DrumKit,
+  //     alt: "JS Drum Kit",
+  //     cardTitle: "JS Drum Kit",
+  //     cardParagraph: "A Web Application. Which has different sounds. By pressing the buttons from Keyboard we can hear the sound.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/Javascript_Drum_Kit/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/Javascript_Drum_Kit"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: CSSJS,
+  //     alt: "CSS Variable with JS",
+  //     cardTitle: "CSS Variable with JS",
+  //     cardParagraph: "A Website which has different variables. By changing the fields from UI the CSS properties will be changed.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/CSS_Variable_with_JavaScript/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/CSS_Variable_with_JavaScript"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     image: ColorChanger,
+  //     alt: "Color Changer",
+  //     cardTitle: "Color Changer",
+  //     cardParagraph: "Color Changer is a React Web app which changes the color as per your request. Also it has Light and Dark mode.",
+  //     cardTech: ['HTML', 'CSS', 'JavaScript', 'React'],
+  //     cardEnding: "I have tried my excellence to make the website as responsive as possible",
+  //     iconButtons: [
+  //       {
+  //         view: "Website",
+  //         icon: <VisibilityOutlinedIcon />,
+  //         to: "https://chhabriaheena.github.io/Color-Changer/"
+  //       },
+  //       {
+  //         view: "GitHub",
+  //         icon: <GitHubIcon />,
+  //         to: "https://github.com/ChhabriaHeena/Color-Changer"
+  //       }
+  //     ]
+  //   }
+  // ]
 
   return (
     <div>
@@ -253,48 +272,57 @@ const Projects = () => {
           margin={10}>
 
           {
-            projectContent.map((project: any, index: number) => (
+            projectData?.map((project: any, index: number) => (
               <div className='item'>
                 <div>
                   <Card>
                     <CardMedia component='img'
                       height='250'
-                      image={project?.image} alt={project?.alt} className={classes.mediaStyle}/>
+                      image={project?.image} alt={project?.alt} className={classes.mediaStyle} />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">{project?.cardTitle}</Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.cardParagraph}</Typography>
+                      <Typography gutterBottom variant="h5" component="div">{project?.title}</Typography>
+                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.paragraph}</Typography>
                       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                        <div style={{height:"23vh"}}>
+                        <div style={{ height: "23vh" }}>
 
-                        <ol>Technologies Used Are:
-                          {
-                            project && project?.cardTech && project?.cardTech.map((tech: any, techIndex: number) => (
-                              <li>{tech}</li>
-                              
-                            ))}
-                        </ol>
-                            </div>
+                          <ol>Technologies Used Are:
+                            {
+                              project && project?.tech && project?.tech.map((tech: any, techIndex: number) => (
+                                <li>{tech}</li>
+
+                              ))}
+                          </ol>
+                        </div>
                       </Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.cardEnding}</Typography>
+                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.paragraph2}</Typography>
                     </CardContent>
                     <CardActions>
                       {
-                        project?.iconButtons.map((button: any, iconIndex: number) => (
-                          <IconButton>
-                            <Link style={{
-                              color: "grey"
-                            }} to={button?.to} target="_blank">
-                              {button?.icon}
-                            </Link>
-                          </IconButton>
-                        ))
+                            <>
+                              <IconButton>
+                                <Link style={{
+                                  color: "grey"
+                                }} to={project?.link} target="_blank">
+                                  <VisibilityOutlinedIcon />
+                                </Link>
+                              </IconButton>
+                              <IconButton>
+                                <Link style={{
+                                  color: "grey"
+                                }} to={project?.github} target="_blank">
+                                  <GitHubIcon />
+                                </Link>
+                              </IconButton>
+                            </>
+                          
                       }
                     </CardActions>
                   </Card>
 
                 </div>
               </div>
-            ))
+            )
+            )
           }
         </OwlCarousel>
       </div>
