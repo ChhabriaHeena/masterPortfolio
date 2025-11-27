@@ -43,10 +43,6 @@ const Projects = () => {
 
   useEffect(() => {
     postData()
-    if(projectData){
-      postData()
-    }
-
   }, [])
 
   const classes = useStyles();
