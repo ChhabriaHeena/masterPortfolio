@@ -43,6 +43,9 @@ const Projects = () => {
 
   useEffect(() => {
     postData()
+    if(projectData){
+      postData()
+    }
 
   }, [])
 
