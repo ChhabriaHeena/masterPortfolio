@@ -28,8 +28,12 @@ import { Link } from 'react-router-dom'
 const Projects = () => {
 
   const [projectData, setProjectData] = useState<any>();
+  const [projects, setProjects] = useState<any>();
+  const [flag, setFlag] = useState<any>(false);
+  const [loading, setLoading] = useState<any>(false);
 
   const postData = () => {
+    setLoading(true)
     fetch("https://portfolio-backend-tclu.onrender.com/projectdata", {
       method: "get",
       headers: {
@@ -37,13 +41,25 @@ const Projects = () => {
       }
     })
       .then((res: any) => res.json())
-      .then((data: any) => setProjectData(data))
+      .then((data: any) => {
+        setProjectData(data)
+        setLoading(false)
+        setFlag(true)
+      })
       .catch((error: any) => console.error(error))
   }
 
   useEffect(() => {
     postData()
   }, [])
+
+
+  useEffect(() => {
+    if (flag) {
+      setProjects(projectData)
+    }
+
+  }, [flag])
 
   const classes = useStyles();
 
@@ -265,38 +281,41 @@ const Projects = () => {
   return (
     <div>
       <h1 className={classes.projectContent}>Projects</h1>
-      <div className={classes.owlTheme}>
-        <OwlCarousel className='owl-theme' items={3}
-          lazyLoad={true} loop={true} autoplay={true} responsive={responsiveOptions}
-          margin={10}>
+      {
+        loading ? <h2>Loading...</h2>
+          :
+          <div className={classes.owlTheme}>
+            <OwlCarousel className='owl-theme' items={3}
+              lazyLoad={true} loop={true} autoplay={true} responsive={responsiveOptions}
+              margin={10}>
+              {
 
-          {
-            projectData?.map((project: any, index: number) => (
-              <div className='item'>
-                <div>
-                  <Card>
-                    <CardMedia component='img'
-                      height='250'
-                      image={project?.image} alt={project?.alt} className={classes.mediaStyle} />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">{project?.title}</Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.paragraph}</Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                        <div style={{ height: "23vh" }}>
+                flag && projectData && projectData?.map((project: any, index: number) => (
+                  <div className='item'>
+                    <div>
+                      <Card>
+                        <CardMedia component='img'
+                          height='250'
+                          image={project?.image} alt={project?.alt} className={classes.mediaStyle} />
+                        <CardContent>
+                          <Typography gutterBottom variant="h5" component="div">{project?.title}</Typography>
+                          <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.paragraph}</Typography>
+                          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                            <div style={{ height: "23vh" }}>
 
-                          <ol>Technologies Used Are:
-                            {
-                              project && project?.tech && project?.tech.map((tech: any, techIndex: number) => (
-                                <li>{tech}</li>
+                              <ol>Technologies Used Are:
+                                {
+                                  project && project?.tech && project?.tech.map((tech: any, techIndex: number) => (
+                                    <li>{tech}</li>
 
-                              ))}
-                          </ol>
-                        </div>
-                      </Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.paragraph2}</Typography>
-                    </CardContent>
-                    <CardActions>
-                      {
+                                  ))}
+                              </ol>
+                            </div>
+                          </Typography>
+                          <Typography variant="body2" sx={{ color: 'text.secondary' }}>{project?.paragraph2}</Typography>
+                        </CardContent>
+                        <CardActions>
+                          {
                             <>
                               <IconButton>
                                 <Link style={{
@@ -313,18 +332,19 @@ const Projects = () => {
                                 </Link>
                               </IconButton>
                             </>
-                          
-                      }
-                    </CardActions>
-                  </Card>
 
-                </div>
-              </div>
-            )
-            )
-          }
-        </OwlCarousel>
-      </div>
+                          }
+                        </CardActions>
+                      </Card>
+
+                    </div>
+                  </div>
+                )
+                )
+              }
+            </OwlCarousel>
+          </div>
+      }
     </div>
   )
 }
