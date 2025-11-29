@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.db869e20.js",
-    "static/css/427.6c41a7c4.chunk.css": "/static/css/427.6c41a7c4.chunk.css",
-    "static/js/427.e4f05615.chunk.js": "/static/js/427.e4f05615.chunk.js",
-    "static/js/453.c1320ecf.chunk.js": "/static/js/453.c1320ecf.chunk.js",
-    "static/js/197.7c98e415.chunk.js": "/static/js/197.7c98e415.chunk.js",
-    "static/media/CloudDeveloper.png": "/static/media/CloudDeveloper.bd55e2c1bc361264b3ae.png",
-    "static/media/Heena_Chhabria.webp": "/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
-    "static/media/FullStack.webp": "/static/media/FullStack.055ff8818900ae3e6940.webp",
-    "static/media/about-me.jpg": "/static/media/about-me.683e8d578b41bc8928c8.jpg",
-    "static/media/contactme.avif": "/static/media/contactme.b0aec40a557fcf09b3df.avif",
-    "static/media/Spinner@1x-1.0s-200px-200px.svg": "/static/media/Spinner@1x-1.0s-200px-200px.472850acdcd9b36227ae686487744f8d.svg",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.db869e20.js.map": "/static/js/main.db869e20.js.map",
-    "427.6c41a7c4.chunk.css.map": "/static/css/427.6c41a7c4.chunk.css.map",
-    "427.e4f05615.chunk.js.map": "/static/js/427.e4f05615.chunk.js.map",
-    "453.c1320ecf.chunk.js.map": "/static/js/453.c1320ecf.chunk.js.map",
-    "197.7c98e415.chunk.js.map": "/static/js/197.7c98e415.chunk.js.map"
+    "main.css": "/masterPortfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/masterPortfolio/static/js/main.cf373663.js",
+    "static/css/427.6c41a7c4.chunk.css": "/masterPortfolio/static/css/427.6c41a7c4.chunk.css",
+    "static/js/427.f21c3d5f.chunk.js": "/masterPortfolio/static/js/427.f21c3d5f.chunk.js",
+    "static/js/453.c1320ecf.chunk.js": "/masterPortfolio/static/js/453.c1320ecf.chunk.js",
+    "static/js/197.7c98e415.chunk.js": "/masterPortfolio/static/js/197.7c98e415.chunk.js",
+    "static/media/CloudDeveloper.png": "/masterPortfolio/static/media/CloudDeveloper.bd55e2c1bc361264b3ae.png",
+    "static/media/Heena_Chhabria.webp": "/masterPortfolio/static/media/Heena_Chhabria.8bf92dfa2661c318146e.webp",
+    "static/media/FullStack.webp": "/masterPortfolio/static/media/FullStack.055ff8818900ae3e6940.webp",
+    "static/media/about-me.jpg": "/masterPortfolio/static/media/about-me.683e8d578b41bc8928c8.jpg",
+    "static/media/contactme.avif": "/masterPortfolio/static/media/contactme.b0aec40a557fcf09b3df.avif",
+    "static/media/Spinner@1x-1.0s-200px-200px.svg": "/masterPortfolio/static/media/Spinner@1x-1.0s-200px-200px.472850acdcd9b36227ae686487744f8d.svg",
+    "index.html": "/masterPortfolio/index.html",
+    "main.e6c13ad2.css.map": "/masterPortfolio/static/css/main.e6c13ad2.css.map",
+    "main.cf373663.js.map": "/masterPortfolio/static/js/main.cf373663.js.map",
+    "427.6c41a7c4.chunk.css.map": "/masterPortfolio/static/css/427.6c41a7c4.chunk.css.map",
+    "427.f21c3d5f.chunk.js.map": "/masterPortfolio/static/js/427.f21c3d5f.chunk.js.map",
+    "453.c1320ecf.chunk.js.map": "/masterPortfolio/static/js/453.c1320ecf.chunk.js.map",
+    "197.7c98e415.chunk.js.map": "/masterPortfolio/static/js/197.7c98e415.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.db869e20.js"
+    "static/js/main.cf373663.js"
   ]
 }
