@@ -28,7 +28,11 @@ const Banner = () => {
 
               {/* <h1>Heena Chhabria</h1> */}
               <h2>Software Engineer</h2>
-              <h3>ReactJS Developer with 3 Years of
+              <h3>ReactJS Developer with <span style={{ fontWeight: 'bold', fontSize: '40px' }}>
+                3 
+              </span>
+                 Years 
+                 of
                 Professional Experience, including 6
                 Months of Internship as an MCA Grad
                 Student in building scalable SaaS and
