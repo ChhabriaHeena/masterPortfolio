@@ -28,10 +28,21 @@ const Banner = () => {
 
               {/* <h1>Heena Chhabria</h1> */}
               <h2>Software Engineer</h2>
-              <h3>A self-motivated individual with 2+ years of experience in Frontend Development and a great understanding of
-                programming languages who is looking for a new opportunity.
-                A position in a growth-oriented company where I can put my abilities to effective use. While having the benefit of the
-                company this would be the opportunity to expand my knowledge and abilities
+              <h3>ReactJS Developer with 3 Years of
+                Professional Experience, including 6
+                Months of Internship as an MCA Grad
+                Student in building scalable SaaS and
+                MERN stack applications, improving
+                UI/UX, and integrating APIs. Executed 7+
+                web applications using ReactJS and
+                TypeScript. Built a MERN-based personal
+                portfolio with a dashboard panel to add,
+                update, delete, and display projects
+                dynamically through API calls. Refactored
+                50+ components to improve
+                responsiveness and created reusable UI
+                elements, reducing development time by
+                40%.
               </h3>
               <div>
 

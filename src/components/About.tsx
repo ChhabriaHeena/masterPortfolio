@@ -19,7 +19,7 @@ const About = () => {
         </Grid>
         <Grid item xs={12} md={6} sm={6} className={classes.aboutContent}>
           <h3>
-            I've worked as a Software Engineer for more than 2+ years. I've demonstrated my abilities several times while working for a product-based start-up.
+            I've worked as a Software Engineer for 3 years. I've demonstrated my abilities several times while working for a product-based start-up.
 
             In addition to many other things, I have worked on React JS, MUI, interface design, code debugging, front-end development, CSS, SCSS, JavaScript, TypeScript, JSON, HTML, and many more. I have also created React libraries and integrated APIs.
           </h3>
